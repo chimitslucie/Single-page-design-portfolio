@@ -1,27 +1,300 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap");
 
 :root {
-  
+    --black: #030303;
+    --medium-brown: #7a746e;
+    --light-cream: #fff7f0;
+    --galactic-blue: #755cde;
+    --summer-yellow: #f6a560;
+    --pink: #f39e9e;
+    --light-red: #eb7565;
+    --cyan: #61c4b7;
+    --dark-purple: #552049;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  img {
+}
+
+img {
     width: 100%;
     max-width: 100%;
-  }
-  
-  html,
-  body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-  }
+}
 
-  body {
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--black);
+}
+
+body {
     width: 100vw;
     height: 100vh;
-  }
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--medium-brown);
+}
+
+button {
+    border: none;
+}
+
+.btn {
+    width: 230px;
+    border-radius: 30px;
+    padding: 15px 45px;
+    color: var(--light-cream);
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.btn__primary {
+    background-color: var(--black);
+}
+
+.btn__primary:hover {
+    background-color: var(--galactic-blue);
+}
+
+.btn__secondary {
+    background-color: var(--light-red);
+}
+
+.btn__secondary:hover {
+    background-color: var(--summer-yellow);
+}
+
+.arrows {
+    width: 65px;
+    background-color: var(--black);
+    padding: 25px 25px;
+}
+
+.arrows:hover {
+    background-color: var(--galactic-blue);
+}
+
+.logo {
+    width: 65px;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.informationbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .informationbar {
+    margin: 35px auto 65px auto;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero__text {
+    max-width: 730px;
+    text-align: center;
+    margin: 25px auto 0 auto;
+}
+
+.skills {
+    margin: 80px auto 135px auto;
+}
+
+.skills__content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+
+.skills__graphic {
+    grid-area: 1 / 1 / 3 / 3;
+    background-color: var(--galactic-blue);
+    padding: 25px 25px;
+    border-radius: 10px;
+}
+
+.graphic__img {
+    width: 130px;
+    margin-left: 170px;
+}
+
+.skills__graphic .skills__text {
+    margin-top: 95px;
+}
+
+.skills__ux {
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: var(--summer-yellow);
+    padding: 25px 25px;
+    border-radius: 10px;
+}
+
+.ux__img {
+    width: 65px;
+    margin-left: 50px;
+}
+
+.skills__ux .skills__text {
+    margin-top: 40px;
+}
+
+.skills__apps {
+    grid-area: 1 / 4 / 2 / 5;
+    background-color: var(--pink);
+    padding: 25px 25px;
+    border-radius: 10px;
+}
+
+.apps__img {
+    width: 65px;
+    margin-left: 50px;
+}
+
+.skills__apps .skills__text {
+    margin-top: 40px;
+}
+
+.skills__illustration {
+    grid-area: 2 / 3 / 3 / 5;
+    background-color: var(--light-red);
+    padding: 25px 25px;
+    border-radius: 10px;
+}
+
+.illustration__img {
+    width: 130px;
+    margin-left: 170px;
+}
+
+.skills__illustration .skills__text {
+    margin-top: 40px;
+}
+
+.skills__photography {
+    grid-area: 1 / 5 / 2 / 7;
+    background-color: var(--cyan);
+    padding: 25px 25px;
+    border-radius: 10px;
+}
+
+.photography__img {
+    width: 160px;
+    margin-left: 150px;
+}
+
+.skills__photography .skills__text {
+    margin-top: 40px;
+}
+
+.skills__motion {
+    grid-area: 2 / 5 / 3 / 7;
+    background-color: var(--dark-purple);
+    padding: 25px 25px;
+    border-radius: 10px;
+}
+
+.motion__img {
+    width: 130px;
+    margin-left: 170px;
+}
+
+.skills__motion .skills__text {
+    margin-top: 40px;
+}
+
+.skills__text {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.profil {
+    margin-bottom: 90px;
+}
+
+.profil__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profil__img {
+    width: 445px;
+}
+
+.profil__content-text {
+    max-width: 540px;
+    width: 100%;
+}
+
+.profil__text {
+    margin: 35px auto 30px auto;
+}
+
+.work {
+    margin-bottom: 90px;
+}
+
+.work__title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.contact {
+  margin-bottom: 55px;
+}
+
+.contact__content {
+    background-color: var(--black);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 95px 80px 65px;
+    color: var(--light-cream);
+}
+
+.contact__text {
+    color: var(--light-cream);
+    margin-top: 25px;
+    max-width: 540px;
+    width: 100%;
+}
+
+footer .informationbar {
+  margin-bottom: 65px;
+}
