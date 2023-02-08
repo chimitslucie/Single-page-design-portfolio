@@ -4,6 +4,11 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
         <link rel="stylesheet" href="./css/style.css" />
         <title>Document</title>
     </head>
@@ -108,6 +113,17 @@
         </section>
         <section class="work">
             <h3 class="work__title">My Work</h3>
+            <div id="slider">
+                <div><img src="./img/image-slide-1.jpg" alt="image" class="slide__img slide-01"></div>
+                <div><img src="./img/image-slide-2.jpg" alt="image" class="slide__img slide-02"></div>
+                <div><img src="./img/image-slide-3.jpg" alt="image" class="slide__img slide-03"></div>
+                <div><img src="./img/image-slide-4.jpg" alt="image" class="slide__img slide-04"></div>
+                <div><img src="./img/image-slide-5.jpg" alt="image" class="slide__img slide-05"></div>
+            </div>
+            <div class="slide__btn">
+                <button class="arrows" id="prev"><img src="./img/icon-arrow-left.svg" alt="arrow-left" class="arrows__icon"></button>
+                <button class="arrows" id="next"><img src="./img/icon-arrow-right.svg" alt="arrow-right" class="arrows__icon"></button>
+            </div>
         </section>
         <section class="contact">
             <div class="container">
@@ -138,6 +154,18 @@
             </div>
         </footer>
 
+        <script
+            type="text/javascript"
+            src="//code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
         <script src="./js/main.js"></script>
     </body>
 </html>
